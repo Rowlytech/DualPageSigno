@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+ 
+}
+.container{
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+    display: flex;
+    width: 80%;
+    height: 80%;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 1s ease-in;
+    z-index: 1;
+    
+    
+}
+.container2{
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                0 10px 10px rgba(0,0,0,0.22);
+    display: none;
+    width: 80%;
+    height: 80%;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 1s ease-in;
+    position: absolute;
+    left: 10%;
+    top:10% ;
+    z-index: 0;
+}
+h3{
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-self: center;
+}
+input{
+    padding: 10px;
+    margin: 20px;
+    height: auto;
+    width: 80%;
+    border: 2px solid #ee5d09;
+    background-color: transparent;
+    
+
+    
+}
+button{
+    margin: auto;
+    display: flex;
+    border-radius: 50px;
+    background-color: #ee5d09;
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+    }
+button:active{
+    transform: scale(0.7);
+}
+h1{
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 5vh;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    background-color: rgba(250, 235, 215, 0.144);
+}
+p{
+    margin-top: 50%;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+.or{
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+    margin-left: 250px;
+}
+#ors{
+    margin-bottom: 30px;
+    margin-left: 210px;
+}
+.all{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.icons .fa{
+    display: inline-flex;
+    
+    width: 40px;
+    border: 2px solid #ee5d092f;
+    padding: 10px;
+    align-content: center;
+    box-sizing: border-box;
+    left: 100px;
+    color: #ee5d09;
+    flex-grow: 1;
+}
+.icons{
+    
+    margin-left: 180px;
+}
+.signup .main{
+    display: block;
+    height: 100%;
+    width: 50%;
+    color: #ee5d09;
+    justify-content: center;
+    order: 0;
+    position: relative;
+    background-color: #fff;
+}
+.signup .sub{
+width: 50%;
+height: 100%;
+display: block;
+background-color: #ee5d09;
+justify-self: center;
+order: 1;
+align-items: center;
+}
+.signin .main{
+    display: block;
+    height: 100%;
+    width: 50%;
+    color: #ee5d09;
+    border-radius: 10px;
+    
+    order: 1;
+    position: relative;
+    background-color: #fff;
+}
+.signin .sub{
+width: 50%;
+height: 100%;
+display: block;
+background-color: #ee5d09;
+
+    
+order: 0;
+}
+
+.signin{
+   
+    width:100% ;
+    display: flex;
+    
+    transform: translateX(0%);
+    /*left: 1145px;*/
+    flex-grow: 2;
+
+  }
+.signup{
+    display: flex;
+    width: 100%;
+    flex-grow: 2;
+    
+
+    
+}
+section{
+    transition: all 1s ease-out;
+}
+.container.right-panel-active .signup {
+    transform: translateX(-50%);
+    /*display: none;*/
+    animation: show 1s ease-in-out;
+    opacity: 0;
+    z-index: 1;
+ 
+}
+.container2.right-panel-active2 .signin {
+    transform: translateX(50%);
+    /*transform: translateX(-50%);
+    /*display:flex;*/
+    animation: show 1s ease-in-out;
+    opacity: 1;
+    width:100%;
+    z-index: 0;
+    
+}
+@keyframes show {
+    
+}
+
+/*.signin{
+    width: 100%;
+    display: flex;
+    order: 1;
+    
+  }
+.signup{
+    display: flex;
+    width: 100%;
+    order: 0;
+   
+}

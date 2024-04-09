@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/dualform.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+<div class="container" id="container">
+   <section class="signup"> 
+    <div class="main">
+        <h3>Sign Up</h3>
+        <input type="text" placeholder="Name" class="name">
+        <input type="email" placeholder="Email" class="email">
+        <input type="password" placeholder="Password" class="password">
+
+        
+        <button>Sign Up</button>
+
+        <div class="all">
+                <div class="or" id="ors">
+                    <span>-or-<br><b>Sign Up using</b></span>
+                    
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                 </div>
+        </div>
+    </div>
+    <div class="sub" >
+        <h1>Welcome to Signup Page</h1>
+        <p>Already have an account Please click on sign in below to continue</p>
+        <button class="in">Sign In</button>
+    </div>
+    
+   </section>
+</div>
+<div class="container2 " >
+   <section class="signin">
+    <div class="main">
+        <h3>Sign In</h3>
+        <input type="email" placeholder="Email" class="email">
+        <input type="password" placeholder="password" class="password">
+        <button >Sign In</button>
+        <div class="or">
+            <span><line>-</line>or<line>-</line></span>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+             </div>
+    </div>
+    
+    <div class="sub">
+        <h1>Welcome to Signin Page</h1>
+        <p>Dont have an account Please click on sign up below to continue</p>
+        <button class="up">Sign Up</button>
+    </div>
+    
+   </section>
+</div>   
+<script>
+    const signUpButton = document.querySelector(".in");
+    const signInButton = document.querySelector(".up");
+    const container = document.querySelector(".container");
+    const container2 = document.querySelector(".container2");
+
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add("right-panel-active");
+        container2.style.display = 'flex';
+        container.style.zIndex = 0;
+        container2.classList.remove("right-panel-active2");
+
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove("right-panel-active");
+        container2.classList.add("right-panel-active2");
+        container.style.zIndex = 1;
+
+    });
+</script>
+    </body>
+</html>
